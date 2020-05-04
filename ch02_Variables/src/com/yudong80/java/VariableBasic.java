@@ -16,7 +16,7 @@ public class VariableBasic {
 		gradeC = 3.8;
 		avg = 0;
 		
-		//3. 계산 (재정의)
+		//3. 연산 (재정의)
 		avg = (gradeJava + gradeC) / 2;	
 		name = "Yu, DongHwan";
 		studentNum = 600;
