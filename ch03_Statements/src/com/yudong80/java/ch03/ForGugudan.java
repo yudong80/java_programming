@@ -1,14 +1,11 @@
 package com.yudong80.java.ch03;
 
-public class WhileBasic {
+public class ForGugudan {
 	public static void main(String[] args) {
-		//1. 备备窜 (3窜)
+		//1. 备备窜 (3窜) 
 		int dan = 3;
-		int i = 1;
-		
-		while (i <= 9) {
+		for (int i=1; i <= 9; ++i) {
 			System.out.println(dan + " * " + i + " = " + (dan * i));
-			i += 1;
 		}
 	}
 }
