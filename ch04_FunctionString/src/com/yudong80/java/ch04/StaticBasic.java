@@ -8,7 +8,7 @@ public class StaticBasic {
 	}
 	
 	public static void main(String[] args) {
-		//1. static 은 메서드 내부에서 사용할 수 없습니다. 
+		//1. static은 메서드 내부에서는 사용할 수 없습니다. 
 		//static int num = 0; //컴파일 오류 발생! 
 		
 		//2. static은 함수 외부에 있는 변수를 참조합니다. 
@@ -18,8 +18,5 @@ public class StaticBasic {
 		int num = 500;
 		boolean isPositive = isPositive(num);
 		System.out.println(num + "은 양수인가요? " + isPositive);
-		
-		//4. static 함수 인수로 다른 함수를 넘길 수 있습니다.
-		
 	}
 }
