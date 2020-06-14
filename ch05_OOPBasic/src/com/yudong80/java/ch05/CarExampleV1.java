@@ -1,33 +1,53 @@
 package com.yudong80.java.ch05;
 
 class Car {
-	String carNumber = "가1234";
-	int cc = 2000;
-	String fromDate = "202006"; //2020년 6월 
-	int speed = 0;
+	private static final int DEFAULT_ACCEL = 10;
+	private static final String SPEED_UNIT = "km/h";
 	
-	void start() {
-		System.out.println("시동을 겁니다");
-		speed = 10; //시속 10km
-		System.out.println("시속: " + speed);
+	private String carNumber;
+	private int speed = 0;
+	
+	public Car(String carNumber) {
+		this.carNumber = carNumber;
 	}
 	
-	void accelerate() {
-		speed += 10;
-		System.out.println("시속: " + speed);
+	public void start() {
+		System.out.println("차량 " + carNumber + "에 시동을 겁니다");
+		accelerate();
+	}
+
+	public void accelerate() {
+		accelerate(DEFAULT_ACCEL);
 	}
 	
-	void decelerate() {
+	public void accelerate(int km) {
+		speed += km;
+		printSpeed(speed);		
+	}
+		
+	public void decelerateHalf() {
 		speed *= 0.5;
-		System.out.println("시속: " + speed);
+		printSpeed(speed);
+		
+	}
+	
+	public void decelerateAs(int km) {
+		speed -= km;
+		printSpeed(speed);
+	}
+	
+	private static void printSpeed(final int speed) {
+		System.out.println("시속: " + speed + SPEED_UNIT);
 	}
 }
 
 public class CarExampleV1 {
 	public static void main(String[] args) {
-		Car car = new Car();
+		Car car = new Car("가1234");
 		car.start();
 		car.accelerate();
-		car.decelerate();
+		car.accelerate(70);
+		car.decelerateAs(60);
+		car.decelerateHalf();
 	}
 }
