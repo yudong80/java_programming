@@ -10,9 +10,9 @@ public class ScopeBasic {
 		int number = 333;
 		System.out.println("지역변수 number의 값은 " + number);
 		
-		//2. 맴버 변수 (5장 참조)
+		//2. 멤버 변수 (5장 참조)
 //		String str = title;
-		System.out.println("맴버변수 title은 참조할 수 없습니다.");
+		System.out.println("멤버변수 title은 참조할 수 없습니다.");
 		
 		//3. static 변수
 		System.out.println("static 변수인 CONSTANT의 값은 " + CONSTANT);
