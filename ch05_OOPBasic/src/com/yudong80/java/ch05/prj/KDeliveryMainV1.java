@@ -141,5 +141,6 @@ public class KDeliveryMainV1 {
 		} while (menu != 5);
 		
 		System.out.println("이용해주셔서 감사합니다.");
+		kd.close();
 	}
 }
