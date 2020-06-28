@@ -1,18 +1,18 @@
 package com.yudong80.java.ch06;
 
-class CarImpl implements Car{
+class MyCar implements Car {
 	private static final int DEFAULT_ACCEL = 10;
 	private static final String SPEED_UNIT = "km/h";
 	
 	private String carNumber;
 	private int speed = 0;
 	
-	public CarImpl(String carNumber) {
+	public MyCar(String carNumber) {
 		this.carNumber = carNumber;
 	}
 	
 	public void start() {
-		System.out.println("차량 " + carNumber + "에 시동을 겁니다");
+		System.out.println("내 차량 " + carNumber + "에 시동을 겁니다");
 		accelerate();
 	}
 
@@ -41,9 +41,9 @@ class CarImpl implements Car{
 	}
 }
 
-public class CarExampleV2 {
+public class CarExampleV3 {
 	public static void main(String[] args) {
-		Car car = new CarImpl("가1234");
+		Car car = new MyCar("가1234");
 		car.start();
 		car.accelerate();
 		car.accelerate(70);
