@@ -7,6 +7,7 @@ public class SavingAccount extends BankAccount{
 	public SavingAccount(String accNumber, int deposit) {
 		super(accNumber);
 		super.balance = deposit;
+		System.out.println(accNumber + "계좌가 생성되었습니다 (잔고: " + deposit + " 원)");
 	}
 	
 	public int getMaturedAmount() {

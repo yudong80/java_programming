@@ -7,8 +7,9 @@ public class BankAccount {
 	public BankAccount(String accNumber) {
 		accountNumber = accNumber;
 		balance = 0;
+		System.out.println(accNumber + "계좌가 생성되었습니다 (잔고: " + balance + " 원)");
 	}
-	
+		
 	public void deposit(int amount) {
 		balance += amount;
 	}
