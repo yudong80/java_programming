@@ -1,4 +1,4 @@
-package com.yudong80.java.ch06x;
+package com.yudong80.java.ch06.abs;
 
 abstract public class Phone {
 

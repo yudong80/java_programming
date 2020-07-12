@@ -1,4 +1,4 @@
-package com.yudong80.java.ch06x;
+package com.yudong80.java.ch06.abs;
 
 public class PhoneExampleV1 {
 	public static void main(String[] args) {
