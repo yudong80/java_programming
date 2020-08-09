@@ -1,4 +1,4 @@
-package com.yudong80.java.ch08.list;
+package com.yudong80.java.ch08;
 
 import java.util.ArrayList;
 import java.util.List;

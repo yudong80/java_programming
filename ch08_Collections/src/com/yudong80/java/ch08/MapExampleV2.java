@@ -1,4 +1,4 @@
-package com.yudong80.java.map;
+package com.yudong80.java.ch08;
 
 import java.util.HashMap;
 import java.util.Map;

@@ -1,4 +1,4 @@
-package com.yudong80.java.set;
+package com.yudong80.java.ch08;
 
 import java.util.HashSet;
 import java.util.Set;

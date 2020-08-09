@@ -1,4 +1,4 @@
-package com.yudong80.java.map;
+package com.yudong80.java.ch08;
 
 import java.util.Map;
 import java.util.Set;
