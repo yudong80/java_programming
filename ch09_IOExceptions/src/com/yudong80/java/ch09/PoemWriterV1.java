@@ -6,13 +6,13 @@ import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 
-public class PoemWriter {
+public class PoemWriterV1 {
 	private static final String DEFAULT_INPUT_FILE = "poem.txt";
 	private static final String DEFAULT_OUTPUT_FILE = "poem_copy.txt";
 
 	private String outputFile;
 	
-	public PoemWriter(String outFile) { 
+	public PoemWriterV1(String outFile) { 
 		this.outputFile= outFile;
 	}
 	
@@ -41,7 +41,7 @@ public class PoemWriter {
 		
 	public static void main(String[] args) throws IOException {
 		//1. PoemWriter 按眉 积己 
-		PoemWriter poemWriter = new PoemWriter(DEFAULT_OUTPUT_FILE);
+		PoemWriterV1 poemWriter = new PoemWriterV1(DEFAULT_OUTPUT_FILE);
 		
 		//2. poem.txt 颇老 佬扁 
 		String original = poemWriter.readInputPoem(DEFAULT_INPUT_FILE);

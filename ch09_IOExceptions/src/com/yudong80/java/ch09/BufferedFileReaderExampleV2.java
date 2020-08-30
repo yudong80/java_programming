@@ -1,4 +1,4 @@
-package com.yudong80.java.ch09.exceptions;
+package com.yudong80.java.ch09;
 
 import java.io.BufferedReader;
 import java.io.FileNotFoundException;
@@ -16,6 +16,7 @@ public class BufferedFileReaderExampleV2 {
 			br = new BufferedReader(new FileReader(TARGET_TEXT_FILE));
 		} catch (FileNotFoundException e) {
 			System.out.println("FileNotFoundException 발생: " + e.getMessage());
+			return;
 		}
 		
 		//2. 버퍼로 읽기
